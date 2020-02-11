@@ -2,9 +2,9 @@ from django.db import models
 
 # Create your models here.
 
-Class Registry(models.Model):
+class Registry(models.Model):
     '''Registry models'''
-    plant_name = models.CharField(max_lengh=20)
+    plant_name = models.CharField(max_length=20)
 
     week_control = models.DateTimeField(blank=True)
 
@@ -18,7 +18,7 @@ Class Registry(models.Model):
     picture = models.ImageField(upload_to='registers/picture',
                                 height_field=200,
                                 width_field=200,
-                                max_lengh=None,
+                                max_length=None,
                                 blank=True,
                                 null=True
                                 )
