@@ -1,7 +1,133 @@
-html *{
-	font-family: sans-serif
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0px;
 }
 
-img {
+h2 {
+	color: #50555c;
+	text-transform: uppercase;
+	font-family:'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 0px;
+}
+h4{
+	color: rgb(28, 73, 73);
+	text-transform: capitalize;
+	font-family:'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	margin: 0px;
+	margin-bottom: 3px;
+}
+
+h5{
+	color: rgb(28, 73, 73);
+	text-transform: capitalize;
+	font-family:'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: left;
+	margin-top: 0px;
+	margin-bottom: 8px;
+
+}
+
+h6{
+	color:#50555c;
+	text-transform: capitalize;
+	font-family:'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: left;
+	margin-top: 0px;
+	margin-bottom: 8px;
+	font-style: italic;
+
+}
+strong{
+	color: aliceblue;
+	text-transform: capitalize;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.img {
 	max-width: 50px;
 }
+
+.container{
+	width: 1000px;
+	/* border: 1px solid red; */
+	margin: 0 auto;
+	display: inherit;
+	justify-content: inherit;
+	align-items: inherit;
+	height: inherit;
+	flex-wrap: inherit;
+}
+
+.navbar-header{
+	background-color: rgb(28, 73, 73);
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+	color: blanchedalmond;
+	padding: 10px;
+	height: 70px;
+ 
+}
+.navbar-header a{
+	color: aliceblue;
+	text-decoration: none;
+}
+.navbar-menu{
+	justify-content: space-between;
+	display: flex;
+	height: inherit;
+	list-style: none;
+	align-items: center;
+	margin: 8px;
+
+}
+.navbar-menu nav{
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+	height: 70px;
+	margin-left: 8px;
+}
+
+.register-container{
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	/* align-items: center; */
+	/* border: 1px solid red; */
+}
+
+.data-register-plant{
+	align-items: initial;
+	margin-top: 0px;
+	width: 300px;
+	padding: 8px;
+}
+
+.form-register{
+	border-radius: 8px;
+	padding: 8px;
+	/* border: 1px solid red; */
+}
+
+.foot-container {
+	background-color: rgb(28, 73, 73);
+	margin-top: 8px;
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	height: 70px;
+}
+
+

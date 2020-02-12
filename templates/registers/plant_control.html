@@ -1,0 +1,26 @@
+<div class="register-control" style="margin: 8px;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    border-radius: 10px;
+                                    border: 2px solid #50555c;
+                                    background-color: rgba(253, 251, 251, 0.966);
+                                    color: #50555c;
+                                    padding: 20px;">
+    <div>   
+        <h4>Date</h4>    
+    {{ register.week_control}}
+    </div>
+    <div>
+        <h4>Water consuption</h4>
+    {{ register.water_consuption }} mL
+    </div>
+    <div>
+        <h4>Size</h4>
+    {{ register.size_control }} mm
+    </div>
+    <div>
+    <img class= height="150" width="150"
+    src="{{ register.picture.url }}" alt="{{ register.plant_name }}">
+    </div>
+</div>

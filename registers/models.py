@@ -16,12 +16,15 @@ class Registry(models.Model):
     size_control = models.FloatField(default=0)
 
     picture = models.ImageField(upload_to='registers/picture',
-                                height_field=200,
-                                width_field=200,
+                                height_field=None,
+                                width_field=None,
                                 max_length=None,
                                 blank=True,
                                 null=True
-                                )
+                                ) 
 
     created = models.DateTimeField(auto_now=True)
     modified = models.DateTimeField(auto_now_add=True)
+
+    class Meta():
+        ordering = ['-created']
