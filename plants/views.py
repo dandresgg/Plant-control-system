@@ -50,10 +50,8 @@ class PlantDetails(LoginRequiredMixin, DetailView, FormView):
         '''Add users post to context'''
         plant = self.get_object()
         registers = Registry.objects.filter(plant=plant)
-        registerid= Registry.objects.filetr(id=plant.id)
         context = {
             'plant': self.get_object(),
-            'registero': registerid,
             'registers' : registers,
             'form' : RegisterForm()
         }
