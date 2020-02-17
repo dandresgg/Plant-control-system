@@ -9,3 +9,5 @@ django-heroku
 cloudinary==1.17.0
 django-cloudinary-storage==0.2.3
 gunicorn==20.0.4
+psycopg2==2.7.3.2
+whitenoise==3.3.1
