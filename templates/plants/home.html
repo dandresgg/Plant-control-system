@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block head_content %}
+<title>Plat Control</title>
+{% endblock %}
+
+{% block container %}
+    <div class="mt-3">        
+            <a href="{% url 'plants:new_plant' %}" 
+            type="submit" 
+            class="btn btn-success btn-block mt-1">Add New Plant</a>        
+    </div>
+    <div>
+        <h2 class="mt-2"> plant list </h2>
+        <div style="background-color: #50555c;
+                    padding: 5px;
+                    border-radius: 10px;">
+            {% for plant in plants %}
+            <a href="{% url 'plants:plant_details' plant.id %}">
+            {% include "plants/list_plants.html" %}
+            </a>
+            {% endfor %}        
+        </div>
+    </div>
+{% endblock %}

@@ -1,17 +1,16 @@
 from django.db import models
+#Models
+from plants.models import Plants
 
 # Create your models here.
 
 class Registry(models.Model):
     '''Registry models'''
-    plant_name = models.CharField(max_length=20)
+    plant = models.ForeignKey(Plants, on_delete=models.CASCADE, null=True)
 
     week_control = models.DateTimeField(blank=True)
 
     water_consuption = models.FloatField(default=0)
-
-    active_nutrients = models.FloatField(default=0)
-    noactive_nutrients = models.FloatField(default=0)
 
     size_control = models.FloatField(default=0)
 

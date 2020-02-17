@@ -10,7 +10,7 @@ class RegisterForm(forms.ModelForm):
     '''register model form'''
     class Meta:
         model = Registry
-        fields = ('plant_name','week_control', 'water_consuption','size_control', 'picture')
+        fields = ('week_control', 'water_consuption','size_control', 'picture')
 
         widgets = {
             'week_control': DateInput()

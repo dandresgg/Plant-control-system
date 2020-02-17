@@ -2,16 +2,14 @@
     <div class="navbar-header">
         <div class="container">
                 <div>            
-                <a href="">
+                <a href="{% url 'plants:plants' %}">
                     <img src="{% static "img/icon.png" %}" height="45" width="45" 
                     class="d-inline-block align-top"/>
                 </a>
                 </div>
                 <div class="navbar-menu">
-                    <nav><a href="">Inicio</a></nav>
-                    <nav><a href="">Inicio</a></nav>
-                    <nav><a href="">Inicio</a></nav>
-                    <nav><a href="https://platzi.com" target="_blank">Platzi</a></nav>
+                    <nav><a href="{% url 'plants:plants' %}">Inicio</a></nav>
+                    <nav><a href="{% url 'users:logout' %}">logout</a></nav>
                 </div>
         </div>
        

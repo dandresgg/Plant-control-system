@@ -8,18 +8,20 @@
 <div class="register-container">
     <div class="data-register-plant">
         <h2>Details</h2>
-        <h5>class:</h5>
-        <h6>Leafy Green</h6>
         <h5>plant name:</h5>
-        <h6>{{ register.plant_name }}</h6>
+        <h6>{{ plant.plant_name }}</h6>
+        <h5>class:</h5>
+        <h6>{{ plant.plant_class }}</h6>
+        <h5>plant Type:</h5>
+        <h6>{{ plant.plant_type }}</h6>        
         <h5>last register:</h5>
-        <h6>{{ register.modified }}</h6>
-        <h5>weeks:</h5>
-        <h6>{{ register.week_control }}</h6>
+        <h6>{{ registero.modified }}</h6>
+        <h5>created:</h5>
+        <h6>{{ plant.created }}</h6>
         <h5>active nutrients:</h5>
-        <h6>0.5 ml</h6>
+        <h6>{{ plant.active_nutrients}}</h6>
         <h5>no-active nutrients:</h5>
-        <h6>0.5 ml</h6>
+        <h6>{{ plant.noactive_nutrients}}</h6>
         
     </div> 
     <div class="form-register">
