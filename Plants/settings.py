@@ -27,7 +27,7 @@ SECRET_KEY = 'z1_+^xqq33=u(t%56&bio&exuw(st$k*znek4+*f75e(=amto+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost','plantcontrol.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost','plantcontrolapp.herokuapp.com']
 
 
 # Application definition
