@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'z1_+^xqq33=u(t%56&bio&exuw(st$k*znek4+*f75e(=amto+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost','plantcontrolapp.herokuapp.com']
 
@@ -46,7 +46,7 @@ INSTALLED_APPS = [
 
     #THIRDPARTIES
     'cloudinary',
-] 
+]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -137,8 +137,7 @@ STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 ]
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static') 
-
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'STATIC-BUCKED')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 

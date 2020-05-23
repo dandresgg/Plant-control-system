@@ -11,7 +11,7 @@ class Plants(models.Model):
     plant_type = models.CharField(max_length=20, null=True)
 
     active_nutrients = models.FloatField(default=0)
-    
+
     noactive_nutrients = models.FloatField(default=0)
 
     created = models.DateTimeField(auto_now=True)

@@ -13,15 +13,14 @@
         <h5>class:</h5>
         <h6>{{ plant.plant_class }}</h6>
         <h5>plant Type:</h5>
-        <h6>{{ plant.plant_type }}</h6>        
+        <h6>{{ plant.plant_type }}</h6>
         <h5>created:</h5>
         <h6>{{ plant.created }}</h6>
         <h5>active nutrients:</h5>
         <h6>{{ plant.active_nutrients}}</h6>
         <h5>no-active nutrients:</h5>
         <h6>{{ plant.noactive_nutrients}}</h6>
-        
-    </div> 
+    </div>
     <div class="form-register">
         <h2>New registry</h2>
         <div class="mt-3">
@@ -30,18 +29,16 @@
             {{ form.as_p}}
             <button type="submit" class="btn btn-success btn-block mt-1">Add New</button>
         </form>
-        </div>    
-    </div>    
+        </div>
+    </div>
 </div>
 
 <div>
     <h2> plant control </h2>
-    <div style="background-color: #50555c;
-                padding: 5px;
-                border-radius: 10px;">
+    <div class="display-plants">
         {% for register in registers %}
         {% include "registers/plant_control.html" %}
-        {% endfor %}        
+        {% endfor %}
     </div>
 </div>
 {% endblock%}

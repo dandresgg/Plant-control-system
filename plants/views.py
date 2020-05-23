@@ -12,11 +12,12 @@ from .models import Plants
 # Create your views here.
 
 class ListPlants(LoginRequiredMixin, TemplateView):
-    '''creating plants'''
+    '''showing plants'''
     template_name = 'plants/home.html'
     success_url = reverse_lazy('plants:plants')
 
     def get_context_data(self, **kwargs):
+        '''retuning context'''
         context = super().get_context_data(**kwargs)
         context['plants'] = Plants.objects.all()
         context['form'] = PlantsFormat()
@@ -28,7 +29,7 @@ class CreatePlants(LoginRequiredMixin, FormView):
     form_class = PlantsFormat
 
     def form_valid(self, form):
-        '''save form data'''
+        '''save form plants data'''
         form.save()
         return super().form_valid(form)
 
@@ -37,14 +38,14 @@ class CreatePlants(LoginRequiredMixin, FormView):
 
 
 class PlantDetails(LoginRequiredMixin, DetailView, FormView):
-    '''plant details'''
+    '''plants's details'''
     template_name = 'registers/new_register.html'
-    slug_field = 'id'    
+    slug_field = 'id'
     slug_url_kwarg = 'id'
     queryset = Plants.objects.all()
     context_object_name = 'id'
     form_class = RegisterForm
-    
+
 
     def get_context_data(self, *args, **kwargs):
         '''Add users post to context'''
@@ -58,7 +59,7 @@ class PlantDetails(LoginRequiredMixin, DetailView, FormView):
         return context
 
     def form_valid(self, form):
-        '''save form data'''
+        '''save form plant detail data'''
         plant = self.get_object()
         register = form.save(commit=False)
         register.plant = plant

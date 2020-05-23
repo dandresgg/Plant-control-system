@@ -4,4 +4,8 @@ from django.contrib import admin
 
 from .models import Plants
 
-admin.site.register(Plants)
+@admin.register(Plants)
+class PlantsAdmin(admin.ModelAdmin):
+    list_display = ('plant_name','plant_class','plant_type','active_nutrients','noactive_nutrients','created')
+    list_filter = ('plant_class','plant_type','created')
+    search_fields = ('plant_name','plant_type','plant_class')

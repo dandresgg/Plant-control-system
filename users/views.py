@@ -1,3 +1,4 @@
+#Django views
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth import views as auth_views
 # Create your views here.
@@ -9,5 +10,5 @@ class LoginView(auth_views.LoginView):
     redirect_authenticated_user = True
 
 class LogoutView(LoginRequiredMixin, auth_views.LogoutView):
-    '''logut users'''
-    template_name = 'users/logout' 
+    '''logout users'''
+    template_name = 'users/logout'

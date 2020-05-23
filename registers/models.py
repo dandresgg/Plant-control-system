@@ -20,7 +20,7 @@ class Registry(models.Model):
                                 max_length=None,
                                 blank=True,
                                 null=True
-                                ) 
+                                )
 
     created = models.DateTimeField(auto_now=True)
     modified = models.DateTimeField(auto_now_add=True)
