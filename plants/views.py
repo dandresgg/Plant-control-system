@@ -36,7 +36,6 @@ class CreatePlants(LoginRequiredMixin, FormView):
     def get_success_url(self):
         return reverse('plants:plants')
 
-
 class PlantDetails(LoginRequiredMixin, DetailView, FormView):
     '''plants's details'''
     template_name = 'registers/new_register.html'
@@ -45,7 +44,6 @@ class PlantDetails(LoginRequiredMixin, DetailView, FormView):
     queryset = Plants.objects.all()
     context_object_name = 'id'
     form_class = RegisterForm
-
 
     def get_context_data(self, *args, **kwargs):
         '''Add users post to context'''
